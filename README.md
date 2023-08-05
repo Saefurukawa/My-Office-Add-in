@@ -1,4 +1,4 @@
-# AIdetection
+#Outlook mail plug-in that detects phishing emails
 Crafting an Outlook mail plug-in that detects AI-generated phishing emails.
 
 1. Processing the training data
