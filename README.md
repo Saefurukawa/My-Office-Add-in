@@ -23,6 +23,9 @@ Jupyter Notebook shows an example of how the sample email content can be process
    
 A user will be able to sideload the add-in and run the phishing email detection on the email content. The reading taskpane will show the model's prediction. 
 
+![Screenshot 2023-08-04 at 9 54 54 PM](https://github.com/Saefurukawa/My-Office-Add-in/assets/123199087/67614bd9-2574-420f-a748-d66bec6bc51c)
+
+
 Please note that it uses a Python backend (Flask API) to communicate between Python (machine learning models) and Javascript (Office Add-in project). When the user clicks "run" button on Outlook's taskpane, it sends a Post request to Flask API, which processes the data and makes predictions based on the chosen machine learning model. Please run TestFetch.js to test Flask API on a local server. 
 
 Since Flask API is hosted on a local server, the Outlook app won't be able to access the API, purporting to the "Network error". To make this API accessible from Outlook, it's recommended to use services such as AWS to host the API on a public server. (I have not implemented this part in this project). 
