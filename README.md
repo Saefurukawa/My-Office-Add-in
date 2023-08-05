@@ -2,10 +2,12 @@
 Crafting an Outlook mail plug-in that detects AI-generated phishing emails.
 
 1. Processing the training data
+   
 The training dataset includes the email content (X_train) and label of email being ham or spam (y_train). I used stemming and vectorizing to preprocess the data.
 
 
 2. Finding models
+   
 I tested accuracy for four models, gaussian, multinomial, complement, and bernaulli. 
 
 Based on this, I concluded that complementNB is the best model. In my office-add-in project, I added complementNB model with alpha = 0.1 and fit_prior = True, BernouliNB model with alpha = 0.1 and fit_prior = True, and multinomialNB model with alpha = 0.1 and fit_prior = False.
