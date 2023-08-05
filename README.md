@@ -11,6 +11,7 @@ The training dataset includes the email content (X_train) and label of email bei
 I tested accuracy for four models, gaussian, multinomial, complement, and bernaulli. 
 
 Based on this, I concluded that complementNB is the best model. In my office-add-in project, I added complementNB model with alpha = 0.1 and fit_prior = True, BernouliNB model with alpha = 0.1 and fit_prior = True, and multinomialNB model with alpha = 0.1 and fit_prior = False.
+![Screenshot 2023-08-04 at 9 43 30 PM](https://github.com/Saefurukawa/My-Office-Add-in/assets/123199087/3a11812c-7dab-4fa8-b920-04fc7bf6b258)
 
 3. Testing the model
 Jupyter Notebook shows an example of how the sample email content can be processed by complementNB model to be labelled as either spam or ham. The email content is first stemmed and vectorized and is passed onto the trained model.
