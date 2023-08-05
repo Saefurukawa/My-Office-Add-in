@@ -6,38 +6,8 @@ The training dataset includes the email content (X_train) and label of email bei
 
 
 2. Finding models
-
 I tested accuracy for four models, gaussian, multinomial, complement, and bernaulli. 
---------------------
-Using : gaussian
-Confusion matrix for : gaussian
-[[1391  105]
- [ 403 1831]]
-Accuracy score for : gaussian
-0.8638069705093834
---------------------
---------------------
-Using : multinomial
-Confusion matrix for : multinomial
-[[1406   90]
- [  90 2144]]
-Accuracy score for : multinomial
-0.9517426273458445
---------------------
---------------------
-Using : compliment
-Confusion matrix for : compliment
-[[1416   80]
- [  99 2135]]
-Accuracy score for : compliment
-0.9520107238605898
---------------------
---------------------
-...
- [ 358 1876]]
-Accuracy score for : bernaulli
-0.8916890080428954
---------------------
+
 Based on this, I concluded that complementNB is the best model. In my office-add-in project, I added complementNB model with alpha = 0.1 and fit_prior = True, BernouliNB model with alpha = 0.1 and fit_prior = True, and multinomialNB model with alpha = 0.1 and fit_prior = False.
 
 3. Testing the model
